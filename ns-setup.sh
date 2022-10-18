@@ -34,7 +34,8 @@ read domain
 echo "NS_DOMAIN=$domain" >> .env
 echo
 
-secret=$(Vintick25010125)
+echo "Введите Secret API:"
+read secret
 echo "NS_SECRET=$secret" >> .env
 
 curl https://raw.githubusercontent.com/justmara/ns-setup/main/docker-compose.yml --output docker-compose.yml
